@@ -6,7 +6,7 @@
 }
 
 :root {
-  --color-primary: #e7a285;
+  --color-primary: #0fcea9; /*#e7a285*/
   --color-gradient-start: #e7a285;
   --color-gradient-stop: #e7a285;
 }
