@@ -2,12 +2,96 @@
 
 {% block head %}
 
+
+
 {% endblock %}
 
 {% block body %}
 
 	
+	<main id="content" class="content">
+		{% load static %}
+
+		<div class="titlebar titlebar-md scheme-light text-center bg-center" style="background-image: url(/static/assets/demo/bg/bg-52.jpg);">
+
+			<div class="titlebar-inner">
+				<div class="container titlebar-container">
+					<div class="row titlebar-container">
+						<div class="titlebar-col col-md-8 col-md-offset-2">
+							<h1 data-fittext="true" data-fittext-options='{ "maxFontSize": 50, "minFontSize": 32 }'>Contact Us</h1>
+							<a class="titlebar-scroll-link" href="#content" data-localscroll="true"><i class="fa fa-angle-down"></i></a>
+						</div><!-- /.titlebar-col -->
+					</div><!-- /.titlebar-row -->
+				</div><!-- /.titlebar-container -->
+			</div><!-- /.titlebar-inner -->
 	
+		</div><!-- /.titlebar -->
+
+		<section class="vc_row pt-120 pb-120">
+			<div class="container">
+				<div class="row">
+
+					<div class="lqd-column col-md-12">
+						<div class="lqd-column-inner bg-white box-shadow-1">
+							<div class="row d-flex flex-wrap align-items-stretch">
+
+								<div class="lqd-column col-md-4 bg-cover bg-center" style="background-image: url(/static/assets/demo/bg/bg-63.jpg);">
+
+								</div><!-- /.lqd-column col-md-4 -->
+
+								<div class="lqd-column col-md-8 px-md-5 pt-30 pb-30">
+
+									<div class="lqd-column col-md-12 text-center">
+
+										<header class="fancy-title">
+											<h2>Connect with us</h2>
+										</header>
+					
+									</div><!-- /.col-md-12 text-center -->
+
+									<div class="contact-form contact-form-inputs-underlined contact-form-button-block">
+										<form action="assets/php/mailer.php" method="post" novalidate="novalidate">
+											<div class="row">
+												<div class="col-md-6">
+													<input type="text" name="name" aria-required="true" aria-invalid="false" placeholder="First Name" required>
+												</div><!-- /.col-md-6 -->
+												<div class="col-md-6">
+													<input type="text" name="l-name" aria-required="true" aria-invalid="false" placeholder="Last Name" required>
+												</div><!-- /.col-md-6 -->
+												<div class="col-md-6">
+													<input type="email" name="email" aria-required="true" aria-invalid="false" placeholder="Your email address" required>
+												</div><!-- /.col-md-6 -->
+												<div class="col-md-6">
+													<input type="tel" name="mobile" aria-required="true" aria-invalid="false" placeholder="Mobile no" required>
+												</div><!-- /.col-md-6 -->
+												<div class="col-md-12">
+													<textarea cols="10" rows="2" name="message" aria-required="true" aria-invalid="false" placeholder="Message" required></textarea>
+												</div><!-- /.col-md-12 -->
+												<div class="lqd-column col-md-12 text-right">
+													<div class="col-md-4 mt-25">
+														<input class="btn btn-default text-uppercase circle btn-bordered border-thick font-size-14 font-weight-semibold" type="submit" value="Submit">
+													</div><!-- /.col-md-12 -->
+												</div>
+												
+											</div><!-- /.row -->
+										</form>
+										<div class="contact-form-result hidden"></div><!-- /.contact-form-result -->
+									</div><!-- /.contact-form -->
+
+									<p>We respect your privacy and do not tolerate spam and will never sell, rent, lease or give away your information to any third party.</p>
+
+								</div><!-- /.lqd-column col-md-8 -->
+
+							</div><!-- /.row -->
+						</div><!-- /.lqd-column-inner bg-white box-shadow-1 -->
+					</div><!-- /.lqd-column col-md-12 -->
+
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</section>
+
+		
+	</main><!-- /#content.content -->
 	
 {% endblock %}
 	

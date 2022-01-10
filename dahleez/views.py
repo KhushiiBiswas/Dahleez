@@ -11,3 +11,19 @@ def homeView(request):
         for i in os.listdir(settings.MEDIA_ROOT + "/slides" ):
             imgarr.append(r"/media/slides/" + i)
         return render(request, 'index.html',{"arr":imgarr})
+
+def aboutUs(request):
+    if request.method == 'GET':      
+        return render(request, 'about_us.html')
+
+def focusArea(request):
+    if request.method == 'GET':      
+        return render(request, 'focus-areas.html')
+
+def contact(request):
+    if request.method == 'GET':      
+        return render(request, 'contact.html')
+
+def donate(request):
+    if request.method == 'GET':      
+        return render(request, 'donate.html')

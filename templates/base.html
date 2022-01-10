@@ -9,7 +9,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="theme-color" content="#87e3c5">
 
+	<style>
+		::selection {
+			background: #0fcea9;
+		  }
+	</style>
+
+
     {% block head %}
+
+
 
     {% endblock %}
 
@@ -21,23 +30,27 @@
 
 	<link rel="stylesheet" href="https://use.typekit.net/vtq7trz.css">
 	
-	<link rel="stylesheet" href="static/assets/vendors/liquid-icon/liquid-icon.min.css" />
-	<link rel="stylesheet" href="static/assets/vendors/font-awesome/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="static/assets/css/theme-vendors.min.css" />
-	<link rel="stylesheet" href="static/assets/css/theme.min.css" />
-	<link rel="stylesheet" href="static/assets/css/themes/voguish.css" />
+	<link rel="stylesheet" href="/static/assets/vendors/liquid-icon/liquid-icon.min.css" />
+	<link rel="stylesheet" href="/static/assets/vendors/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="/static/assets/css/theme-vendors.min.css" />
+	<link rel="stylesheet" href="/static/assets/css/theme.min.css" />
+	<link rel="stylesheet" href="/static/assets/css/themes/voguish.css" />
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+
+
+	
 	
 	<!-- Head Libs -->
-	<script async src="static/assets/vendors/modernizr.min.js"></script>
+	<script async src="/static/assets/vendors/modernizr.min.js"></script>
 	
 </head>
 
-<body data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="minimal" data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
-	{% load static %}
+<body data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="modern" data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
+	
 	<div id="wrap">
     
 		
-		{% comment %} <header class="main-header main-header-overlay" data-react-to-megamenu="true" data-sticky-header="true" data-sticky-options='{ "stickyTrigger": "first-section" }'>
+		<header class="main-header main-header-overlay" data-sticky-header="true" data-sticky-options='{ "stickyTrigger": "first-section" }'>
 			
 			<div class="mainbar-wrap">
 				<div class="megamenu-hover-bg"></div><!-- /.megamenu-hover-bg -->
@@ -45,14 +58,14 @@
 					<div class="mainbar">
 						<div class="row mainbar-row align-items-lg-stretch px-4">
 							
-							<div class="col">
+							<div class="col-auto pr-5">
 								<div class="navbar-header">
-									<a class="navbar-brand" href="" rel="home">
+									<a class="navbar-brand" href="index-creative.html" rel="home">
 										<span class="navbar-brand-inner">
 											<img class="logo-dark" src="/static/assets/img/logo/logo-1.svg" alt="DAHLEEZ" >
-											<img class="logo-sticky" src="/static/assets/Dahleez Bold-01.jpg" alt="DAHLEEZ" width="150">
-											<img class="mobile-logo-default" src="/static/assets/Dahleez-01.png" alt="DAHLEEZ">
-											<img class="logo-default" src="/static/assets/logo.png" alt="DAHLEEZ" width="150">
+											<img class="logo-sticky" src="/static/assets/Dahleez Bold-01.jpg" alt="DAHLEEZ" width ="150">
+											<img class="mobile-logo-default" src="/static/assets/Dahleez Bold-01.jpg" alt="DAHLEEZ">
+											<img class="logo-default" src="/static/assets/logo.png" alt="DAHLEEZ" width = "150">
 										</span>
 									</a>
 									<button type="button" class="navbar-toggle collapsed nav-trigger style-mobile" data-toggle="collapse" data-target="#main-header-collapse" aria-expanded="false" data-changeclassnames='{ "html": "mobile-nav-activated overflow-hidden" }'>
@@ -71,9 +84,9 @@
 								<div class="collapse navbar-collapse" id="main-header-collapse">
 									
 									<ul id="primary-nav" class="main-nav nav align-items-lg-stretch justify-content-lg-center" data-submenu-options='{ "toggleType":"fade", "handler":"mouse-in-out" }'>
-										
+                                    
 										<li>
-											<a href="index.html">
+											<a href="">
 												<span class="link-icon"></span>
 												<span class="link-txt">
 													<span class="link-ext"></span>
@@ -86,9 +99,7 @@
 												</span>
 											</a>
 										</li>
-										
-										
-										
+								
 										<li class="menu-item-has-children ">
 											<a href="#">
 												<span class="link-icon"></span>
@@ -96,6 +107,7 @@
 													<span class="link-ext"></span>
 													<span class="txt">
 														Who we are
+														
 														<span class="submenu-expander">
 															<i class="fa fa-angle-down"></i>
 														</span>
@@ -104,7 +116,7 @@
 											</a>
 											<ul class="nav-item-children">
 												<li>
-													<a href="portfolio-grid-1.html">
+													<a href="">
 														<span class="link-icon"></span>
 														<span class="link-txt">
 															<span class="link-ext"></span>
@@ -118,7 +130,7 @@
 													</a>
 												</li>
 												<li>
-													<a href="portfolio-grid-2.html">
+													<a href="">
 														<span class="link-icon"></span>
 														<span class="link-txt">
 															<span class="link-ext"></span>
@@ -131,94 +143,12 @@
 														</span>
 													</a>
 												</li>
-												<li>
-													<a href="portfolio-grid-3.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Portfolio Grid 3
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="portfolio-grid-4.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Portfolio Grid 4
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="portfolio-grid-5.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Portfolio Grid 5
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="portfolio-grid-6.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Portfolio Grid 6
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="portfolio-grid-7.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Portfolio Grid 7
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="portfolio-single-1.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Portfolio Single 1
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
+											   
+											  
 											</ul>
 										</li>
 										<li class="menu-item-has-children">
-											<a href="#">
+											<a href="">
 												<span class="link-icon"></span>
 												<span class="link-txt">
 													<span class="link-ext"></span>
@@ -232,7 +162,7 @@
 											</a>
 											<ul class="nav-item-children">
 												<li>
-													<a href="blog-with-sidebar.html">
+													<a href="">
 														<span class="link-icon"></span>
 														<span class="link-txt">
 															<span class="link-ext"></span>
@@ -246,7 +176,7 @@
 													</a>
 												</li>
 												<li>
-													<a href="blog-split.html">
+													<a href="">
 														<span class="link-icon"></span>
 														<span class="link-txt">
 															<span class="link-ext"></span>
@@ -259,118 +189,7 @@
 														</span>
 													</a>
 												</li>
-												<li>
-													<a href="blog-masonry.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Masonry
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="blog-modern.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Modern
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="blog-date.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Date
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="blog-classic.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Classic
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="blog-magazine.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Magazine
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="blog-featured.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Featured
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="blog-grid.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Grid
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="blog-single.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Single
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
+											   
 											</ul>
 										</li>
 										<li class="menu-item-has-children">
@@ -388,7 +207,7 @@
 											</a>
 											<ul class="nav-item-children">
 												<li>
-													<a href="element-sticky-submenu.html">
+													<a href="">
 														<span class="link-icon"></span>
 														<span class="link-txt">
 															<span class="link-ext"></span>
@@ -402,7 +221,7 @@
 													</a>
 												</li>
 												<li>
-													<a href="index-business.html">
+													<a href="">
 														<span class="link-icon"></span>
 														<span class="link-txt">
 															<span class="link-ext"></span>
@@ -415,148 +234,10 @@
 														</span>
 													</a>
 												</li>
-												<li>
-													<a href="index-creative.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Header 3
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="index-crypto.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Header 4
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="index-digital-agency.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Header 5
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="index-digital-creative.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Header 6
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="index-freelancer.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Header 7
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="index-mobile.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Header 8
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="index-opus.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Header 9
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="index-services.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Header 10
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="index-voguish.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Header 11
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="index-wave.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Header 12
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
+												
 											</ul>
 										</li>
+										
 										<li class="menu-item-has-children">
 											<a href="#">
 												<span class="link-icon"></span>
@@ -572,7 +253,7 @@
 											</a>
 											<ul class="nav-item-children">
 												<li>
-													<a href="element-sticky-submenu.html">
+													<a href="">
 														<span class="link-icon"></span>
 														<span class="link-txt">
 															<span class="link-ext"></span>
@@ -586,7 +267,7 @@
 													</a>
 												</li>
 												<li>
-													<a href="index-business.html">
+													<a href="">
 														<span class="link-icon"></span>
 														<span class="link-txt">
 															<span class="link-ext"></span>
@@ -599,447 +280,42 @@
 														</span>
 													</a>
 												</li>
-												<li>
-													<a href="index-creative.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Header 3
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="index-crypto.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Header 4
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="index-digital-agency.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Header 5
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="index-digital-creative.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Header 6
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="index-freelancer.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Header 7
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="index-mobile.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Header 8
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="index-opus.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Header 9
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="index-services.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Header 10
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="index-voguish.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Header 11
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="index-wave.html">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Header 12
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
+												
 											</ul>
 										</li>
 									
 									</ul><!-- /#primary-nav  -->
 								
-								</div><!-- /#main-header-collapse -->
-								
-							</div><!-- /.col -->
+							</div><!-- /#main-header-collapse -->
+							
+						</div><!-- /.col -->
 						
-							<div class="col text-right">
+						<div class="col text-right">
 
-								<div class="header-module">
-									<ul class="social-icon social-icon-sm">
-										<li>
-											<a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-										</li>
-										<li>
-											<a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-										</li>
-										<li>
-											<a href="#" target="_blank"><i class="fa fa-telegram"></i></a>
-										</li>
-									</ul>
-								</div><!-- /.header-module -->
-								
-							</div><!-- /.col -->
+							<div class="header-module">
+
+								<a href="#" target="_blank" class="btn btn-default text-uppercase circle btn-bordered border-thick font-size-14 font-weight-semibold">
+									<span>
+										<span class="btn-txt">DONATE </span>
+										<span class="btn-icon ">
+											<i class="icon-ion-ios-arrow-forward"></i>
+										</span>
+									</span>
+								</a>
+
+							</div><!-- /.header-module -->
+							
+						</div><!-- /.col -->
 						
-						</div><!-- /.mainbar-row -->
-					</div><!-- /.mainbar -->
-				</div><!-- /.mainbar-container -->
-			</div><!-- /.mainbar-wrap -->
-			
-		</header><!-- /.main-header --> {% endcomment %}
+					</div><!-- /.mainbar-row -->
+				</div><!-- /.mainbar -->
+			</div><!-- /.mainbar-container -->
+		</div><!-- /.mainbar-wrap -->
+		
+	</header><!-- /.main-header -->
 		
 	
 
-    <header class="main-header main-header-overlay bb-fade-white-015" data-sticky-header="true" data-sticky-options='{ "stickyTrigger": "first-section" }'>
-			
-        <div class="mainbar-wrap">
-            <div class="megamenu-hover-bg"></div><!-- /.megamenu-hover-bg -->
-            <div class="container-fluid mainbar-container">
-                <div class="mainbar">
-                    <div class="row mainbar-row align-items-lg-stretch px-4">
-                        
-                        <div class="col">
-                            <div class="navbar-header">
-                                <a class="navbar-brand" href="" rel="home">
-                                    <span class="navbar-brand-inner">
-                                        <img class="logo-dark" src="/static/assets/img/logo/logo-1.svg" alt="DAHLEEZ" >
-                                        <img class="logo-sticky" src="/static/assets/Dahleez Bold-01.jpg" alt="DAHLEEZ" width ="150">
-                                        <img class="mobile-logo-default" src="/static/assets/Dahleez-01.png" alt="DAHLEEZ">
-                                        <img class="logo-default" src="/static/assets/logo.png" alt="DAHLEEZ" width = "150">
-                                    </span>
-                                </a>
-                                <button type="button" class="navbar-toggle collapsed nav-trigger style-mobile" data-toggle="collapse" data-target="#main-header-collapse" aria-expanded="false" data-changeclassnames='{ "html": "mobile-nav-activated overflow-hidden" }'>
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="bars">
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                    </span>
-                                </button>
-                            </div><!-- /.navbar-header -->
-                        </div><!-- /.col -->
-                        
-                        <div class="col">
-                            
-                            <div class="collapse navbar-collapse" id="main-header-collapse">
-                                
-                                <ul id="primary-nav" class="main-nav nav align-items-lg-stretch justify-content-lg-center" data-submenu-options='{ "toggleType":"fade", "handler":"mouse-in-out" }'>
-                                    
-                                    <li>
-                                        <a href="">
-                                            <span class="link-icon"></span>
-                                            <span class="link-txt">
-                                                <span class="link-ext"></span>
-                                                <span class="txt">
-                                                    Home
-                                                    <span class="submenu-expander">
-                                                        <i class="fa fa-angle-down"></i>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    
-                                    
-                                    
-                                    <li class="menu-item-has-children ">
-                                        <a href="#">
-                                            <span class="link-icon"></span>
-                                            <span class="link-txt">
-                                                <span class="link-ext"></span>
-                                                <span class="txt">
-                                                    Who we are
-                                                    <span class="submenu-expander">
-                                                        <i class="fa fa-angle-down"></i>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </a>
-                                        <ul class="nav-item-children">
-                                            <li>
-                                                <a href="">
-                                                    <span class="link-icon"></span>
-                                                    <span class="link-txt">
-                                                        <span class="link-ext"></span>
-                                                        <span class="txt">
-                                                            Portfolio Grid 1
-                                                            <span class="submenu-expander">
-                                                                <i class="fa fa-angle-down"></i>
-                                                            </span>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    <span class="link-icon"></span>
-                                                    <span class="link-txt">
-                                                        <span class="link-ext"></span>
-                                                        <span class="txt">
-                                                            Portfolio Grid 2
-                                                            <span class="submenu-expander">
-                                                                <i class="fa fa-angle-down"></i>
-                                                            </span>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                           
-                                          
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="">
-                                            <span class="link-icon"></span>
-                                            <span class="link-txt">
-                                                <span class="link-ext"></span>
-                                                <span class="txt">
-                                                    Our work
-                                                    <span class="submenu-expander">
-                                                        <i class="fa fa-angle-down"></i>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </a>
-                                        <ul class="nav-item-children">
-                                            <li>
-                                                <a href="">
-                                                    <span class="link-icon"></span>
-                                                    <span class="link-txt">
-                                                        <span class="link-ext"></span>
-                                                        <span class="txt">
-                                                            with Sidebar
-                                                            <span class="submenu-expander">
-                                                                <i class="fa fa-angle-down"></i>
-                                                            </span>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    <span class="link-icon"></span>
-                                                    <span class="link-txt">
-                                                        <span class="link-ext"></span>
-                                                        <span class="txt">
-                                                            Split
-                                                            <span class="submenu-expander">
-                                                                <i class="fa fa-angle-down"></i>
-                                                            </span>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                           
-                                        </ul>
-                                    </li>
-									<li class="menu-item-has-children">
-                                        <a href="#">
-                                            <span class="link-icon"></span>
-                                            <span class="link-txt">
-                                                <span class="link-ext"></span>
-                                                <span class="txt">
-                                                    Achievements
-                                                    <span class="submenu-expander">
-                                                        <i class="fa fa-angle-down"></i>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </a>
-                                        <ul class="nav-item-children">
-                                            <li>
-                                                <a href="">
-                                                    <span class="link-icon"></span>
-                                                    <span class="link-txt">
-                                                        <span class="link-ext"></span>
-                                                        <span class="txt">
-                                                            Header 1
-                                                            <span class="submenu-expander">
-                                                                <i class="fa fa-angle-down"></i>
-                                                            </span>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    <span class="link-icon"></span>
-                                                    <span class="link-txt">
-                                                        <span class="link-ext"></span>
-                                                        <span class="txt">
-                                                            Header 2
-                                                            <span class="submenu-expander">
-                                                                <i class="fa fa-angle-down"></i>
-                                                            </span>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            
-                                        </ul>
-                                    </li>
-                                    
-                                    <li class="menu-item-has-children">
-                                        <a href="#">
-                                            <span class="link-icon"></span>
-                                            <span class="link-txt">
-                                                <span class="link-ext"></span>
-                                                <span class="txt">
-                                                    Make a difference
-                                                    <span class="submenu-expander">
-                                                        <i class="fa fa-angle-down"></i>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </a>
-                                        <ul class="nav-item-children">
-                                            <li>
-                                                <a href="">
-                                                    <span class="link-icon"></span>
-                                                    <span class="link-txt">
-                                                        <span class="link-ext"></span>
-                                                        <span class="txt">
-                                                            Header 1
-                                                            <span class="submenu-expander">
-                                                                <i class="fa fa-angle-down"></i>
-                                                            </span>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    <span class="link-icon"></span>
-                                                    <span class="link-txt">
-                                                        <span class="link-ext"></span>
-                                                        <span class="txt">
-                                                            Header 2
-                                                            <span class="submenu-expander">
-                                                                <i class="fa fa-angle-down"></i>
-                                                            </span>
-                                                        </span>
-                                                    </span>
-                                                </a>
-                                            </li>
-                                            
-                                        </ul>
-                                    </li>
-                                
-                                </ul><!-- /#primary-nav  -->
-                            
-                            </div><!-- /#main-header-collapse -->
-                            
-                        </div><!-- /.col -->
-                    
-                        <div class="col text-right">
-
-                            <div class="header-module">
-                                <ul class="social-icon social-icon-sm">
-                                    <li>
-                                        <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" target="_blank"><i class="fa fa-telegram"></i></a>
-                                    </li>
-                                </ul>
-                            </div><!-- /.header-module -->
-                            
-                        </div><!-- /.col -->
-                    
-                    </div><!-- /.mainbar-row -->
-                </div><!-- /.mainbar -->
-            </div><!-- /.mainbar-container -->
-        </div><!-- /.mainbar-wrap -->
-    
-    </header><!-- /.main-header -->
 
     {% block body %}
     {% endblock %}
@@ -1055,7 +331,7 @@
 					<div class="lqd-column col-md-6 mb-5 mb-md-0">
 	
 						<figure>
-							<img src="./static/assets/img/logo/voguish-light.svg" alt="Voguish">
+							<img src="/static/assets/img/logo/voguish-light.svg" alt="Voguish">
 						</figure>
 	
 					</div><!-- /.col-md-6 -->
@@ -1146,10 +422,12 @@
 	
 </div><!-- /#wrap -->
 
-<script src="./static/assets/vendors/jquery.min.js"></script>
-<script src="./static/assets/js/theme-vendors.js"></script>
-<script src="./static/assets/js/theme.min.js"></script>
-<script src="./static/assets/js/liquidAjaxMailchimp.min.js"></script>
+<script src="/static/assets/vendors/jquery.min.js"></script>
+<script src="/static/assets/js/theme-vendors.js"></script>
+<script src="/static/assets/js/theme.min.js"></script>
+<script src="/static/assets/js/liquidAjaxMailchimp.min.js"></script>
+
+
 
 </body>
 </html>
