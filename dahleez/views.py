@@ -27,3 +27,7 @@ def contact(request):
 def donate(request):
     if request.method == 'GET':      
         return render(request, 'donate.html')
+
+def campaign(request):
+    if request.method == 'GET':      
+        return render(request, 'campaign.html')
