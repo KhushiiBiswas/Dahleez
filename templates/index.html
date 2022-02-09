@@ -233,18 +233,20 @@
 				</div><!-- /.row -->
 
 				<div class="row">
-
-					<div class="lqd-column col-md-1/5 col-sm-12 px-md-4 text-center mb-5">
-						<div class="lqd-column-inner" data-parallax="true" data-parallax-from='{"translateY":30}' data-parallax-to='{"translateY":-40}' data-parallax-options='{"overflowHidden": false}'>
-							<figure>
-								<img src="./static/assets/demo/team/team-40.jpg" alt="Olivia Robert">
-							</figure>
-							<h2 class="font-size-17 mb-2">Health</h2>
-							<h6 class="font-size-11 mt-0 text-fade-dark-06">Maputo, Africa</h6>
-						</div><!-- /.lqd-column-inner -->
-					</div><!-- /.lqd-column col-md-1/5 col-sm-12 -->
-
-					<div class="lqd-column col-md-1/5 col-sm-6 px-md-4 text-center mb-5">
+					{%for focusarea in focusareas%}
+					<a href = "">
+						<div class="lqd-column col-md-1/5 col-sm-12 px-md-4 text-center mb-5">
+							<div class="lqd-column-inner" data-parallax="true" data-parallax-from='{"translateY":30}' data-parallax-to='{"translateY":-40}' data-parallax-options='{"overflowHidden": false}'>
+								<figure>
+									<img src= {{focusarea.focusArea_img.url}} alt="{{focusarea.title}}">
+								</figure>
+								<h2 class="font-size-17 mb-2">{{focusarea.title}}</h2>
+								
+							</div><!-- /.lqd-column-inner -->
+						</div><!-- /.lqd-column col-md-1/5 col-sm-12 -->
+					</a>
+					{% endfor %}
+					{% comment %} <div class="lqd-column col-md-1/5 col-sm-6 px-md-4 text-center mb-5">
 						<div class="lqd-column-inner" data-parallax="true" data-parallax-from='{"translateY":-30}' data-parallax-to='{"translateY":35}' data-parallax-options='{"overflowHidden": false}'>
 							<figure>
 								<img src="./static/assets/demo/team/team-41.jpg" alt="Olivia Robert">
@@ -282,7 +284,7 @@
 							<h2 class="font-size-17 mb-2">Gilbert Huges</h2>
 							<h6 class="font-size-11 mt-0 text-fade-dark-06">Maputo, Africa</h6>
 						</div><!-- /.lqd-column-inner -->
-					</div><!-- /.lqd-column col-md-1/5 col-sm-12 -->
+					</div><!-- /.lqd-column col-md-1/5 col-sm-12 --> {% endcomment %}
 
 				</div><!-- /.row -->
 
@@ -583,83 +585,6 @@
 
 		<!--------------------------------------------------------------------------------STORIES THAT INSPIRE------------------------------------------------------------>
 
-
-		{% comment %} <section class="vc_row pt-90 pb-65">
-
-			<div class="container">
-				<div class="row">
-
-					<div class="lqd-column col-md-12 text-center">
-	
-						<header class="fancy-title text-center">
-							<div class="ld-fancy-heading">
-								<h1
-								class="mb-4"
-								data-split-text="true"
-								data-split-options='{"type":"lines"}'>
-									<span class="ld-fh-txt">Stories that inspire</span>
-								</h1>
-							</div><!-- /.ld-fancy-heading -->
-						</header>
-
-					</div><!-- /.lqd-column col-md-12 text-center -->
-
-				</div><!-- /.row -->
-			</div><!-- /.container -->
-			<div class="container">
-				<div class="row">
-
-					<div class="lqd-column col-md-4 px-6">
-
-						<div class="iconbox iconbox-lg iconbox-heading-sm">
-							<div class="iconbox-icon-wrap">
-								<span class="iconbox-icon-container">
-									<img src="./static/assets/demo/team/team-1.jpg" class="liquid-image-icon" alt="Icon">
-								</span>
-							</div><!-- /.iconbox-icon-wrap -->
-							<div class="contents">
-								<h3 class="font-weight-semibold">KAMISATO AYAKA</h3>
-								<p>Manage theme settings and take full control over your site.</p>
-							</div><!-- /.contents -->
-						</div><!-- /.iconbox -->
-
-					</div><!-- /.lqd-column col-md-4 -->
-
-					<div class="lqd-column col-md-4 px-6">
-
-						<div class="iconbox iconbox-lg iconbox-heading-sm">
-							<div class="iconbox-icon-wrap">
-								<span class="iconbox-icon-container">
-									<img src="./static/assets/demo/team/team-1.jpg" class="liquid-image-icon" alt="Icon">
-								</span>
-							</div><!-- /.iconbox-icon-wrap -->
-							<div class="contents">
-								<h3 class="font-weight-semibold">SASUKE UCHIHA</h3>
-								<p>Manage theme settings and take full control over your site.</p>
-							</div><!-- /.contents -->
-						</div><!-- /.iconbox -->
-
-					</div><!-- /.lqd-column col-md-4 -->
-
-					<div class="lqd-column col-md-4 px-6">
-
-						<div class="iconbox iconbox-lg iconbox-heading-sm">
-							<div class="iconbox-icon-wrap">
-								<span class="iconbox-icon-container">
-									<img src="./static/assets/demo/team/team-1.jpg" class="liquid-image-icon" alt="Icon">
-								</span>
-							</div><!-- /.iconbox-icon-wrap -->
-							<div class="contents">
-								<h3 class="font-weight-semibold">NARUTO UZUMAKI</h3>
-								<p>Manage theme settings and take full control over your site.</p>
-							</div><!-- /.contents -->
-						</div><!-- /.iconbox -->
-
-					</div><!-- /.lqd-column col-md-4 -->
-
-				</div><!-- /.row -->
-			</div><!-- /.container -->
-		</section> {% endcomment %}
 		<section class="vc_row pt-90 pb-100">
 			<div class="container">
 				<div class="row">
@@ -830,57 +755,6 @@
 				</div><!-- /.container -->
 			</section>
 		
-		<!--------------------------------------------------------------------------------CONTACT US------------------------------------------------------------>
-
-		<section class="vc_row pt-95 pb-80 mt-80 bg-cover" id="buy" style="background-image: url(./static/assets/demo/bg/bg-8.jpg);" data-parallax="true" data-parallax-options='{"parallaxBG": true}'>
-			<div class="container">
-				<div class="row">
-
-					<div class="lqd-column col-md-8">
-
-						<div class="ld-fancy-heading mask-text">
-							<h2
-								class="text-white"
-								data-fittext="true"
-								data-fittext-options='{"compressor":0.55, "maxFontSize": 45, "minFontSize":35 }'
-								data-split-text="true"
-								data-custom-animations="true"
-								data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":700,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"translateY":84,"rotateZ":10},"animations":{"translateY":0,"rotateZ":0}}'
-								data-split-options='{"type":"lines"}'>
-								<span class="ld-fh-txt">
-									Looking for a unique theme?<br />
-									<span class="text-underline">Get your copy today.</span>
-								</span>
-							</h2>
-						</div><!-- /.ld-fancy-heading -->
-
-					</div><!-- /.col-md-8 -->
-
-					<div class="lqd-column col-md-3 col-md-offset-1 text-center">
-						
-						<a
-							href="#"
-							class="btn btn-solid btn-sm semi-round px-3 btn-block bg-white border-color-white bg-hover-dark text-dark text-hover-white lh-2">
-							<span>
-								<span class="btn-txt">Join to download</span>
-							</span>
-						</a>
-
-						<div class="ld-fancy-heading mt-3">
-							<p
-								class="text-white opacity-07"
-								data-split-text="true"
-								data-custom-animations="true"
-								data-ca-options='{"triggerHandler":"inview","animationTarget":".split-inner","duration":700,"delay":100,"easing":"easeOutQuint","direction":"forward","initValues":{"scale":1},"animations":{"scale":1}}' data-split-options='{"type":"lines"}'>
-								<span class="ld-fh-txt"> Do you have a question?<br /> Ask here.</span>
-							</p>
-						</div><!-- /.ld-fancy-heading -->
-
-					</div><!-- /.col-md-3 -->
-
-				</div><!-- /.row -->
-			</div><!-- /.container -->
-		</section>
 		
 	</main><!-- /#content.content -->
 	

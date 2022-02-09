@@ -116,12 +116,12 @@
 											</a>
 											<ul class="nav-item-children">
 												<li>
-													<a href="">
+													<a href= about-us>
 														<span class="link-icon"></span>
 														<span class="link-txt">
 															<span class="link-ext"></span>
 															<span class="txt">
-																Portfolio Grid 1
+																About us
 																<span class="submenu-expander">
 																	<i class="fa fa-angle-down"></i>
 																</span>
@@ -135,7 +135,7 @@
 														<span class="link-txt">
 															<span class="link-ext"></span>
 															<span class="txt">
-																Portfolio Grid 2
+																Our Mission & Vision
 																<span class="submenu-expander">
 																	<i class="fa fa-angle-down"></i>
 																</span>
@@ -161,13 +161,14 @@
 												</span>
 											</a>
 											<ul class="nav-item-children">
+												{% for focusarea in focusareas %}
 												<li>
-													<a href="">
+													<a href="focusarea/ fetch [name='{{focusarea.title}}']">
 														<span class="link-icon"></span>
 														<span class="link-txt">
 															<span class="link-ext"></span>
 															<span class="txt">
-																with Sidebar
+																{{focusarea.title}}
 																<span class="submenu-expander">
 																	<i class="fa fa-angle-down"></i>
 																</span>
@@ -175,20 +176,7 @@
 														</span>
 													</a>
 												</li>
-												<li>
-													<a href="">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Split
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
+												{% endfor %}
 											   
 											</ul>
 										</li>
@@ -212,21 +200,7 @@
 														<span class="link-txt">
 															<span class="link-ext"></span>
 															<span class="txt">
-																Header 1
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Header 2
+																Achievements
 																<span class="submenu-expander">
 																	<i class="fa fa-angle-down"></i>
 																</span>
@@ -239,49 +213,19 @@
 										</li>
 										
 										<li class="menu-item-has-children">
-											<a href="#">
+											<a href= contact>
 												<span class="link-icon"></span>
 												<span class="link-txt">
 													<span class="link-ext"></span>
 													<span class="txt">
-														Make a difference
+														Contact Us
 														<span class="submenu-expander">
 															<i class="fa fa-angle-down"></i>
 														</span>
 													</span>
 												</span>
 											</a>
-											<ul class="nav-item-children">
-												<li>
-													<a href="">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Header 1
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												<li>
-													<a href="">
-														<span class="link-icon"></span>
-														<span class="link-txt">
-															<span class="link-ext"></span>
-															<span class="txt">
-																Header 2
-																<span class="submenu-expander">
-																	<i class="fa fa-angle-down"></i>
-																</span>
-															</span>
-														</span>
-													</a>
-												</li>
-												
-											</ul>
+											
 										</li>
 									
 									</ul><!-- /#primary-nav  -->
@@ -323,36 +267,7 @@
 
     <footer class="main-footer bg-tundora pt-70" data-sticky-footer="true">
 
-		<section class="pb-4">
-
-			<div class="container">
-				<div class="row">
-	
-					<div class="lqd-column col-md-6 mb-5 mb-md-0">
-	
-						<figure>
-							<img src="/static/assets/img/logo/voguish-light.svg" alt="Voguish">
-						</figure>
-	
-					</div><!-- /.col-md-6 -->
-	
-					<div class="lqd-column col-md-6">
-	
-						<div class="one-bullet-list">
-							<ul class="reset-ul inline-nav">
-								<li>Lifetime License</li>
-								<li>Top Notch Support</li>
-								<li>Bonus Plugins</li>
-							</ul>
-						</div>
-	
-					</div><!-- /.col-md-6 -->
-	
-				</div><!-- /.row -->
-			</div><!-- /.container -->
-
-		</section>
-
+		
 		<section>
 			<div class="container bt-fade-white-015 pt-60 pb-60">
 				<div class="row d-flex flex-wrap">

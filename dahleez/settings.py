@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     
     'home',
+    'campaigns',
+    'focusarea'
     #'django.contrib.staticfiles',
 ]
 
